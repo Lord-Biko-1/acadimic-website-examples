@@ -72,7 +72,7 @@ function userAuth(userEmail, userPass, users) {
   for (let i = 0; i < users.length; i++) {
     if (userEmail.value == users[i].email && userPass.value == users[i].pass) {
       if (users[i].isAdmin) {
-        window.location.pathname = "/admin.html";
+        window.location.pathname = "../admin.html";
         return false;
       } else {
         return true;
